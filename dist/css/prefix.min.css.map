@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../prefix.scss"
+    ],
+    "names": [],
+    "file": "prefix.min.css"
+}

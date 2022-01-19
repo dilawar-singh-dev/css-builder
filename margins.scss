@@ -1,0 +1,135 @@
+// SET RANGE
+$range: 25;
+
+// IMPORT PREFIX VAR
+@import 'prefix.scss';
+
+// PADDING MIN 1366 PX
+@for $margin from 1 to $range {
+    .#{$prefix}m-#{$margin} { margin: 5px * $margin; }
+}
+  
+// margin TOP  
+@for $margin from 1 to $range {
+    .#{$prefix}mt-#{$margin} { margin-top: 5px * $margin; }
+}  
+// margin RIGHT   
+@for $margin from 1 to $range {
+    .#{$prefix}mr-#{$margin} { margin-right: 5px * $margin; }
+}  
+// margin BOTTOM  
+@for $margin from 1 to $range {
+    .#{$prefix}mb-#{$margin} { margin-bottom: 5px * $margin; }
+}  
+// margin RIGHT  
+@for $margin from 1 to $range {
+    .#{$prefix}ml-#{$margin} { margin-left: 5px * $margin; }
+}  
+
+// PADDING MIN 576 PX
+@media(min-width:576px){
+
+    .#{$prefix}m-sm-0 { margin: 0px }
+    .#{$prefix}mt-sm-0 { margin-top: 0px; } 
+    .#{$prefix}mr-sm-0 { margin-right: 0px; }
+    .#{$prefix}mb-sm-0 { margin-bottom: 0px; }
+    .#{$prefix}ml-sm-0 { margin-left: 0px; }
+
+    @for $margin from 1 to $range {
+        .#{$prefix}m-sm-#{$margin} { margin: 5px * $margin; }
+        .#{$prefix}mt-sm-#{$margin} { margin-top: 5px * $margin; }
+        .#{$prefix}mr-sm-#{$margin} { margin-right: 5px * $margin; }
+        .#{$prefix}mb-sm-#{$margin} { margin-bottom: 5px * $margin; }
+        .#{$prefix}ml-sm-#{$margin} { margin-left: 5px * $margin; }
+    }  
+} 
+ 
+// PADDING MIN 768 PX
+@media(min-width:768px){
+
+    .#{$prefix}m-md-0 { margin: 0px }
+    .#{$prefix}mt-md-0 { margin-top: 0px; }
+    .#{$prefix}mr-md-0 { margin-right: 0px; }
+    .#{$prefix}mb-md-0 { margin-bottom: 0px; }
+    .#{$prefix}ml-md-0 { margin-left: 0px; }
+
+    @for $margin from 1 to $range {
+        .#{$prefix}m-md-#{$margin} { margin: 5px * $margin; }
+        .#{$prefix}mt-md-#{$margin} { margin-top: 5px * $margin; }
+        .#{$prefix}mr-md-#{$margin} { margin-right: 5px * $margin; }
+        .#{$prefix}mb-md-#{$margin} { margin-bottom: 5px * $margin; }
+        .#{$prefix}ml-md-#{$margin} { margin-left: 5px * $margin; }
+    }  
+}  
+
+// PADDING MIN 992 PX 
+@media(min-width:992px){
+
+    .#{$prefix}m-lg-0 { margin: 0px }
+    .#{$prefix}mt-lg-0 { margin-top: 0px; }
+    .#{$prefix}mr-lg-0 { margin-right: 0px; }
+    .#{$prefix}mb-lg-0 { margin-bottom: 0px; }
+    .#{$prefix}ml-lg-0 { margin-left: 0px; }
+
+    @for $margin from 1 to $range {
+        .#{$prefix}m-lg-#{$margin} { margin: 5px * $margin; }
+        .#{$prefix}mt-lg-#{$margin} { margin-top: 5px * $margin; }
+        .#{$prefix}mr-lg-#{$margin} { margin-right: 5px * $margin; }
+        .#{$prefix}mb-lg-#{$margin} { margin-bottom: 5px * $margin; }
+        .#{$prefix}ml-lg-#{$margin} { margin-left: 5px * $margin; }
+    }  
+} 
+
+// PADDING MIN 1200 PX
+@media(min-width:1200px){
+
+    .#{$prefix}m-xl-0 { margin: 0px }
+    .#{$prefix}mt-xl-0 { margin-top: 0px; }
+    .#{$prefix}mr-xl-0 { margin-right: 0px; }
+    .#{$prefix}mb-xl-0 { margin-bottom: 0px; }
+    .#{$prefix}ml-xl-0 { margin-left: 0px; }
+
+    @for $margin from 1 to $range {
+        .#{$prefix}m-xl-#{$margin} { margin: 5px * $margin; }
+        .#{$prefix}mt-xl-#{$margin} { margin-top: 5px * $margin; }
+        .#{$prefix}mr-xl-#{$margin} { margin-right: 5px * $margin; }
+        .#{$prefix}mb-xl-#{$margin} { margin-bottom: 5px * $margin; }
+        .#{$prefix}ml-xl-#{$margin} { margin-left: 5px * $margin; }
+    }  
+} 
+
+// PADDING MIN 1367 PX
+@media(min-width:1367px){
+
+    .#{$prefix}m-xxl-0 { margin: 0px }
+    .#{$prefix}mt-xxl-0 { margin-top: 0px; }
+    .#{$prefix}mr-xxl-0 { margin-right: 0px; } 
+    .#{$prefix}mb-xxl-0 { margin-bottom: 0px; }
+    .#{$prefix}ml-xxl-0 { margin-left: 0px; }
+
+    @for $margin from 1 to $range {
+        .#{$prefix}m-xxl-#{$margin} { margin: 5px * $margin; }
+        .#{$prefix}mt-xxl-#{$margin} { margin-top: 5px * $margin; }
+        .#{$prefix}mr-xxl-#{$margin} { margin-right: 5px * $margin; }
+        .#{$prefix}mb-xxl-#{$margin} { margin-bottom: 5px * $margin; }
+        .#{$prefix}ml-xxl-#{$margin} { margin-left: 5px * $margin; }
+    }
+} 
+
+// PADDING MIN 1921 PX 
+@media(min-width:1921px){ 
+
+    .#{$prefix}m-xxxl-0 { margin: 0px }
+    .#{$prefix}mt-xxxl-0 { margin-top: 0px; }
+    .#{$prefix}mr-xxxl-0 { margin-right: 0px; }
+    .#{$prefix}mb-xxxl-0 { margin-bottom: 0px; }
+    .#{$prefix}ml-xxxl-0 { margin-left: 0px; }
+
+    @for $margin from 1 to $range {
+        .#{$prefix}m-xxxl-#{$margin} { margin: 5px * $margin; }
+        .#{$prefix}mt-xxxl-#{$margin} { margin-top: 5px * $margin; }
+        .#{$prefix}mr-xxxl-#{$margin} { margin-right: 5px * $margin; }
+        .#{$prefix}mb-xxxl-#{$margin} { margin-bottom: 5px * $margin; }
+        .#{$prefix}ml-xxxl-#{$margin} { margin-left: 5px * $margin; }
+    }
+} 

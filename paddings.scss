@@ -1,0 +1,135 @@
+// SET RANGE
+$range: 21;
+
+// IMPORT PREFIX VAR
+@import 'prefix.scss';
+
+// PADDINGS MIN 1366 PX
+@for $padding from 1 to $range {
+    .#{$prefix}p-#{$padding} { padding: 5px * $padding; }
+}
+   
+// PADDING TOP  
+@for $padding from 1 to $range {
+    .#{$prefix}pt-#{$padding} { padding-top: 5px * $padding; }
+}  
+// PADDING RIGHT  
+@for $padding from 1 to $range {
+    .#{$prefix}pr-#{$padding} { padding-right: 5px * $padding; }
+}   
+// PADDING BOTTOM  
+@for $padding from 1 to $range {
+    .#{$prefix}pb-#{$padding} { padding-bottom: 5px * $padding; }
+}  
+// PADDING RIGHT  
+@for $padding from 1 to $range {
+    .#{$prefix}pl-#{$padding} { padding-left: 5px * $padding; }
+}  
+
+// PADDINGS MIN 576 PX
+@media(min-width:576px){
+
+    .#{$prefix}p-sm-0 { padding: 0px }
+    .#{$prefix}pt-sm-0 { padding-top: 0px; }
+    .#{$prefix}pr-sm-0 { padding-right: 0px; }
+    .#{$prefix}pb-sm-0 { padding-bottom: 0px; }
+    .#{$prefix}pl-sm-0 { padding-left: 0px; }
+
+    @for $padding from 1 to $range {
+        .#{$prefix}p-sm-#{$padding} { padding: 5px * $padding; }
+        .#{$prefix}pt-sm-#{$padding} { padding-top: 5px * $padding; }
+        .#{$prefix}pr-sm-#{$padding} { padding-right: 5px * $padding; }
+        .#{$prefix}pb-sm-#{$padding} { padding-bottom: 5px * $padding; }
+        .#{$prefix}pl-sm-#{$padding} { padding-left: 5px * $padding; }
+    }  
+} 
+ 
+// PADDINGS MIN 768 PX
+@media(min-width:768px){
+
+    .#{$prefix}p-md-0 { padding: 0px }
+    .#{$prefix}pt-md-0 { padding-top: 0px; }
+    .#{$prefix}pr-md-0 { padding-right: 0px; }
+    .#{$prefix}pb-md-0 { padding-bottom: 0px; }
+    .#{$prefix}pl-md-0 { padding-left: 0px; }
+
+    @for $padding from 1 to $range {
+        .#{$prefix}p-md-#{$padding} { padding: 5px * $padding; }
+        .#{$prefix}pt-md-#{$padding} { padding-top: 5px * $padding; }
+        .#{$prefix}pr-md-#{$padding} { padding-right: 5px * $padding; }
+        .#{$prefix}pb-md-#{$padding} { padding-bottom: 5px * $padding; }
+        .#{$prefix}pl-md-#{$padding} { padding-left: 5px * $padding; }
+    }  
+}  
+
+// PADDINGS MIN 992 PX 
+@media(min-width:992px){
+
+    .#{$prefix}p-lg-0 { padding: 0px }
+    .#{$prefix}pt-lg-0 { padding-top: 0px; }
+    .#{$prefix}pr-lg-0 { padding-right: 0px; }
+    .#{$prefix}pb-lg-0 { padding-bottom: 0px; }
+    .#{$prefix}pl-lg-0 { padding-left: 0px; }
+
+    @for $padding from 1 to $range {
+        .#{$prefix}p-lg-#{$padding} { padding: 5px * $padding; }
+        .#{$prefix}pt-lg-#{$padding} { padding-top: 5px * $padding; }
+        .#{$prefix}pr-lg-#{$padding} { padding-right: 5px * $padding; }
+        .#{$prefix}pb-lg-#{$padding} { padding-bottom: 5px * $padding; }
+        .#{$prefix}pl-lg-#{$padding} { padding-left: 5px * $padding; }
+    }  
+} 
+
+// PADDINGS MIN 1200 PX
+@media(min-width:1200px){
+
+    .#{$prefix}p-xl-0 { padding: 0px }
+    .#{$prefix}pt-xl-0 { padding-top: 0px; }
+    .#{$prefix}pr-xl-0 { padding-right: 0px; }
+    .#{$prefix}pb-xl-0 { padding-bottom: 0px; }
+    .#{$prefix}pl-xl-0 { padding-left: 0px; }
+
+    @for $padding from 1 to $range {
+        .#{$prefix}p-xl-#{$padding} { padding: 5px * $padding; }
+        .#{$prefix}pt-xl-#{$padding} { padding-top: 5px * $padding; }
+        .#{$prefix}pr-xl-#{$padding} { padding-right: 5px * $padding; }
+        .#{$prefix}pb-xl-#{$padding} { padding-bottom: 5px * $padding; }
+        .#{$prefix}pl-xl-#{$padding} { padding-left: 5px * $padding; }
+    }  
+} 
+
+// PADDINGS MIN 1367 PX
+@media(min-width:1367px){
+
+    .#{$prefix}p-xxl-0 { padding: 0px }
+    .#{$prefix}pt-xxl-0 { padding-top: 0px; }
+    .#{$prefix}pr-xxl-0 { padding-right: 0px; } 
+    .#{$prefix}pb-xxl-0 { padding-bottom: 0px; }
+    .#{$prefix}pl-xxl-0 { padding-left: 0px; }
+
+    @for $padding from 1 to $range {
+        .#{$prefix}p-xxl-#{$padding} { padding: 5px * $padding; }
+        .#{$prefix}pt-xxl-#{$padding} { padding-top: 5px * $padding; }
+        .#{$prefix}pr-xxl-#{$padding} { padding-right: 5px * $padding; }
+        .#{$prefix}pb-xxl-#{$padding} { padding-bottom: 5px * $padding; }
+        .#{$prefix}pl-xxl-#{$padding} { padding-left: 5px * $padding; }
+    }
+} 
+
+// PADDINGS MIN 1921 PX 
+@media(min-width:1921px){ 
+
+    .#{$prefix}p-xxxl-0 { padding: 0px }
+    .#{$prefix}pt-xxxl-0 { padding-top: 0px; }
+    .#{$prefix}pr-xxxl-0 { padding-right: 0px; }
+    .#{$prefix}pb-xxxl-0 { padding-bottom: 0px; }
+    .#{$prefix}pl-xxxl-0 { padding-left: 0px; }
+
+    @for $padding from 1 to $range {
+        .#{$prefix}p-xxxl-#{$padding} { padding: 5px * $padding; }
+        .#{$prefix}pt-xxxl-#{$padding} { padding-top: 5px * $padding; }
+        .#{$prefix}pr-xxxl-#{$padding} { padding-right: 5px * $padding; }
+        .#{$prefix}pb-xxxl-#{$padding} { padding-bottom: 5px * $padding; }
+        .#{$prefix}pl-xxxl-#{$padding} { padding-left: 5px * $padding; }
+    }
+} 
